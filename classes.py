@@ -16,7 +16,6 @@ def create_app():
 
 app = create_app()
 
-
 # Create a new Database
 def database(name):
     db = SQLAlchemy()
