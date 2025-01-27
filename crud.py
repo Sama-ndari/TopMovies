@@ -14,7 +14,7 @@ def search_movie():
         "api_key": TMDB_API_KEY,
         "query": 'avengers',
         "include_adult": True
-    }
+    } 
     response = requests.get(url, headers=headers, params=params)
     data = response.json()
     movies = data["results"]
