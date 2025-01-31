@@ -21,6 +21,7 @@ def update():
         db.session.commit()
         return redirect(url_for('home'))
 
+
     my_movie = Movie.query.get(movie_id)
     return render_template('edit.html', movie=my_movie, form=update_form)
 
